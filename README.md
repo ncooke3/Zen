@@ -1,2 +1,0 @@
-# Zen
-Simple meditation timer.
