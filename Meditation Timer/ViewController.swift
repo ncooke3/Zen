@@ -32,8 +32,8 @@ class ViewController: UIViewController {
     @IBAction func begin(_ sender: Any) {
         if (beginOutlet.currentTitle?.isEqual("begin"))! {
             timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
-            beginOutlet.setTitle("end", for: [])
             Sound.play(file: "SingingBowl.m4a")
+            beginOutlet.setTitle("end", for: [])
             sliderOutlet.isHidden = true
             
         } else {
