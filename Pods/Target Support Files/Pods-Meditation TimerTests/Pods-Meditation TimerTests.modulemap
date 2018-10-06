@@ -1,0 +1,6 @@
+framework module Pods_Meditation_TimerTests {
+  umbrella header "Pods-Meditation TimerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

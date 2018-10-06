@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB7B888C0CBDC553F3D955D /* Pods_Meditation_TimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E768D3D085B552C5309D8A79 /* Pods_Meditation_TimerTests.framework */; };
+		E88CD3063D2A4370F36ECD0F /* Pods_Meditation_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE24F48BA550063C4490A11E /* Pods_Meditation_Timer.framework */; };
 		EAA01A092167F6A4004E0851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A082167F6A4004E0851 /* AppDelegate.swift */; };
 		EAA01A0B2167F6A4004E0851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A0A2167F6A4004E0851 /* ViewController.swift */; };
 		EAA01A0E2167F6A4004E0851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A0C2167F6A4004E0851 /* Main.storyboard */; };
 		EAA01A102167F6A6004E0851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A0F2167F6A6004E0851 /* Assets.xcassets */; };
 		EAA01A132167F6A6004E0851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A112167F6A6004E0851 /* LaunchScreen.storyboard */; };
 		EAA01A1E2167F6A6004E0851 /* Meditation_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A1D2167F6A6004E0851 /* Meditation_TimerTests.swift */; };
+		EAA01A2921683608004E0851 /* QuoteCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A2821683608004E0851 /* QuoteCall.swift */; };
+		EAA01A2B21685FAB004E0851 /* SingingBowl.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D03F4E12A4FC0D5BFEF0550 /* Pods-Meditation Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation Timer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation Timer/Pods-Meditation Timer.release.xcconfig"; sourceTree = "<group>"; };
+		B3E8FFF3C7ED1B96E892D2D8 /* Pods-Meditation TimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation TimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation TimerTests/Pods-Meditation TimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA596BEB42DCBEE06E90D3F /* Pods-Meditation Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation Timer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation Timer/Pods-Meditation Timer.debug.xcconfig"; sourceTree = "<group>"; };
+		E768D3D085B552C5309D8A79 /* Pods_Meditation_TimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditation_TimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA01A052167F6A4004E0851 /* Meditation Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meditation Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA01A082167F6A4004E0851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAA01A0A2167F6A4004E0851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,10 @@
 		EAA01A192167F6A6004E0851 /* Meditation TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meditation TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA01A1D2167F6A6004E0851 /* Meditation_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation_TimerTests.swift; sourceTree = "<group>"; };
 		EAA01A1F2167F6A6004E0851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA01A2821683608004E0851 /* QuoteCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCall.swift; sourceTree = "<group>"; };
+		EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = SingingBowl.m4a; path = ../../../Desktop/SingingBowl.m4a; sourceTree = "<group>"; };
+		EE24F48BA550063C4490A11E /* Pods_Meditation_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditation_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AB9A32460844C987520CEF /* Pods-Meditation TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation TimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation TimerTests/Pods-Meditation TimerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88CD3063D2A4370F36ECD0F /* Pods_Meditation_Timer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +63,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB7B888C0CBDC553F3D955D /* Pods_Meditation_TimerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1EC8740B4316EBC53D10F46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE24F48BA550063C4490A11E /* Pods_Meditation_Timer.framework */,
+				E768D3D085B552C5309D8A79 /* Pods_Meditation_TimerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E97635D3147C40F1136F5475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAA596BEB42DCBEE06E90D3F /* Pods-Meditation Timer.debug.xcconfig */,
+				7D03F4E12A4FC0D5BFEF0550 /* Pods-Meditation Timer.release.xcconfig */,
+				B3E8FFF3C7ED1B96E892D2D8 /* Pods-Meditation TimerTests.debug.xcconfig */,
+				F3AB9A32460844C987520CEF /* Pods-Meditation TimerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAA019FC2167F6A4004E0851 = {
 			isa = PBXGroup;
 			children = (
 				EAA01A072167F6A4004E0851 /* Meditation Timer */,
 				EAA01A1C2167F6A6004E0851 /* Meditation TimerTests */,
 				EAA01A062167F6A4004E0851 /* Products */,
+				E97635D3147C40F1136F5475 /* Pods */,
+				A1EC8740B4316EBC53D10F46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +115,9 @@
 			children = (
 				EAA01A082167F6A4004E0851 /* AppDelegate.swift */,
 				EAA01A0A2167F6A4004E0851 /* ViewController.swift */,
+				EAA01A2821683608004E0851 /* QuoteCall.swift */,
 				EAA01A0C2167F6A4004E0851 /* Main.storyboard */,
+				EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */,
 				EAA01A0F2167F6A6004E0851 /* Assets.xcassets */,
 				EAA01A112167F6A6004E0851 /* LaunchScreen.storyboard */,
 				EAA01A142167F6A6004E0851 /* Info.plist */,
@@ -103,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAA01A222167F6A6004E0851 /* Build configuration list for PBXNativeTarget "Meditation Timer" */;
 			buildPhases = (
+				52D9079BF8155D2A0A878D92 /* [CP] Check Pods Manifest.lock */,
 				EAA01A012167F6A4004E0851 /* Sources */,
 				EAA01A022167F6A4004E0851 /* Frameworks */,
 				EAA01A032167F6A4004E0851 /* Resources */,
+				849B10BBD1A12014E7862638 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAA01A252167F6A6004E0851 /* Build configuration list for PBXNativeTarget "Meditation TimerTests" */;
 			buildPhases = (
+				DE436D6350E3920C2F7E4EE0 /* [CP] Check Pods Manifest.lock */,
 				EAA01A152167F6A6004E0851 /* Sources */,
 				EAA01A162167F6A6004E0851 /* Frameworks */,
 				EAA01A172167F6A6004E0851 /* Resources */,
@@ -179,6 +220,7 @@
 			files = (
 				EAA01A132167F6A6004E0851 /* LaunchScreen.storyboard in Resources */,
 				EAA01A102167F6A6004E0851 /* Assets.xcassets in Resources */,
+				EAA01A2B21685FAB004E0851 /* SingingBowl.m4a in Resources */,
 				EAA01A0E2167F6A4004E0851 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,12 +234,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52D9079BF8155D2A0A878D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meditation Timer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		849B10BBD1A12014E7862638 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Meditation Timer/Pods-Meditation Timer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meditation Timer/Pods-Meditation Timer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE436D6350E3920C2F7E4EE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meditation TimerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAA01A012167F6A4004E0851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAA01A0B2167F6A4004E0851 /* ViewController.swift in Sources */,
+				EAA01A2921683608004E0851 /* QuoteCall.swift in Sources */,
 				EAA01A092167F6A4004E0851 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,9 +460,11 @@
 		};
 		EAA01A232167F6A6004E0851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA596BEB42DCBEE06E90D3F /* Pods-Meditation Timer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Meditation Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Meditation-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,9 +480,11 @@
 		};
 		EAA01A242167F6A6004E0851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D03F4E12A4FC0D5BFEF0550 /* Pods-Meditation Timer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Meditation Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,6 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Meditation-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +500,7 @@
 		};
 		EAA01A262167F6A6004E0851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E8FFF3C7ED1B96E892D2D8 /* Pods-Meditation TimerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +521,7 @@
 		};
 		EAA01A272167F6A6004E0851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AB9A32460844C987520CEF /* Pods-Meditation TimerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
