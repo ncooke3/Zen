@@ -15,7 +15,6 @@
 		EAA01A102167F6A6004E0851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A0F2167F6A6004E0851 /* Assets.xcassets */; };
 		EAA01A132167F6A6004E0851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A112167F6A6004E0851 /* LaunchScreen.storyboard */; };
 		EAA01A1E2167F6A6004E0851 /* Meditation_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A1D2167F6A6004E0851 /* Meditation_TimerTests.swift */; };
-		EAA01A2921683608004E0851 /* QuoteCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A2821683608004E0851 /* QuoteCall.swift */; };
 		EAA01A2B21685FAB004E0851 /* SingingBowl.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		EAA01A192167F6A6004E0851 /* Meditation TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meditation TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA01A1D2167F6A6004E0851 /* Meditation_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation_TimerTests.swift; sourceTree = "<group>"; };
 		EAA01A1F2167F6A6004E0851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAA01A2821683608004E0851 /* QuoteCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCall.swift; sourceTree = "<group>"; };
 		EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = SingingBowl.m4a; path = ../../../Desktop/SingingBowl.m4a; sourceTree = "<group>"; };
 		EE24F48BA550063C4490A11E /* Pods_Meditation_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditation_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AB9A32460844C987520CEF /* Pods-Meditation TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation TimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation TimerTests/Pods-Meditation TimerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			children = (
 				EAA01A082167F6A4004E0851 /* AppDelegate.swift */,
 				EAA01A0A2167F6A4004E0851 /* ViewController.swift */,
-				EAA01A2821683608004E0851 /* QuoteCall.swift */,
 				EAA01A0C2167F6A4004E0851 /* Main.storyboard */,
 				EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */,
 				EAA01A0F2167F6A6004E0851 /* Assets.xcassets */,
@@ -301,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA01A0B2167F6A4004E0851 /* ViewController.swift in Sources */,
-				EAA01A2921683608004E0851 /* QuoteCall.swift in Sources */,
 				EAA01A092167F6A4004E0851 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
