@@ -90,6 +90,7 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(activityIndicatorView)
