@@ -11,6 +11,8 @@ target 'Meditation Timer' do
     pod 'SwiftyJSON'
     
     pod 'SwiftySound'
+    
+    pod 'NVActivityIndicatorView'
 
   target 'Meditation TimerTests' do
     inherit! :search_paths

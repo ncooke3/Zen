@@ -10,13 +10,18 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import SwiftySound
+import NVActivityIndicatorView
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, NVActivityIndicatorViewable {
     
     
     var minutes = 10
     var timer = Timer()
-
+    
+    var activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 91, y: 375, width: 200, height: 200),
+                                                        type: NVActivityIndicatorType(rawValue: NVActivityIndicatorType.ballScaleRippleMultiple.rawValue)!, color: UIColor(white: CGFloat(237 / 255.0), alpha: 1))
+   
 
     @IBOutlet weak var label: UILabel!
     
@@ -32,16 +37,28 @@ class ViewController: UIViewController {
     @IBAction func begin(_ sender: Any) {
         if (beginOutlet.currentTitle?.isEqual("begin"))! {
             timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
-            Sound.play(file: "SingingBowl.m4a")
             beginOutlet.setTitle("end", for: [])
+            Sound.play(file: "SingingBowl.m4a")
             sliderOutlet.isHidden = true
-            
-        } else {
+            //animation!
+            activityIndicatorView.startAnimating()
+        
+        } else if (beginOutlet.currentTitle?.isEqual("end"))! {
             timer.invalidate()
             getQuote()
             Sound.play(file: "SingingBowl.m4a")
-            beginOutlet.setTitle("begin", for: [])
+            //beginOutlet.setTitle("begin", for: [])
+            sliderOutlet.isHidden = true
+            activityIndicatorView.stopAnimating()
+            beginOutlet.setTitle("again", for: [])
+            
+        } else {
+            timer.invalidate()
+            minutes = 10
+            sliderOutlet.setValue(10, animated: true)
+            label.text = "10 minutes"
             sliderOutlet.isHidden = false
+            beginOutlet.setTitle("begin", for: [])
         }
 
     }
@@ -54,19 +71,13 @@ class ViewController: UIViewController {
             timer.invalidate()
             getQuote()
             Sound.play(file: "SingingBowl.m4a")
+            activityIndicatorView.stopAnimating()
+            beginOutlet.setTitle("again", for: [])
         }
         
     }
     
     
-    @IBOutlet weak var againOutlet: UIButton!
-    @IBAction func again(_ sender: Any) {
-        timer.invalidate()
-        minutes = 10
-        sliderOutlet.setValue(10, animated: true)
-        label.text = "10 minutes"
-        beginOutlet.setTitle("begin", for: [])
-    }
     
     func getQuote() {
         Alamofire.request("https://andruxnet-random-famous-quotes.p.mashape.com/", method: .get, parameters: ["cat":"famous", "count":"1"], headers: ["X-Mashape-Key":"Pw5vWwsh83mshrXvLbPARRDTcjBEp1SGw1pjsnmHAWq03QRVS7"]).responseJSON {
@@ -84,8 +95,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-
+        self.view.addSubview(activityIndicatorView)
+        
+        //activityIndicatorView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
