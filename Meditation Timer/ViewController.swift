@@ -18,18 +18,14 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
     
     var minutes = 10
     var timer = Timer()
-    
     var activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 91, y: 375, width: 200, height: 200),
                                                         type: NVActivityIndicatorType(rawValue: NVActivityIndicatorType.ballScaleRippleMultiple.rawValue)!, color: UIColor(white: CGFloat(237 / 255.0), alpha: 1))
-   
-
     @IBOutlet weak var label: UILabel!
-    
     
     @IBOutlet weak var sliderOutlet: UISlider!
     let step: Float = 5
     @IBAction func slider(_ sender: UISlider) {
-        let minutes = Int(round(sender.value / step) * step)
+        minutes = Int(round(sender.value / step) * step)
         label.text = String(minutes) + " minutes"
     }
     
@@ -40,17 +36,17 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
             beginOutlet.setTitle("end", for: [])
             Sound.play(file: "SingingBowl.m4a")
             sliderOutlet.isHidden = true
-            //animation!
             activityIndicatorView.startAnimating()
+            UIApplication.shared.isIdleTimerDisabled = true
         
         } else if (beginOutlet.currentTitle?.isEqual("end"))! {
             timer.invalidate()
             getQuote()
             Sound.play(file: "SingingBowl.m4a")
-            //beginOutlet.setTitle("begin", for: [])
             sliderOutlet.isHidden = true
             activityIndicatorView.stopAnimating()
             beginOutlet.setTitle("again", for: [])
+            UIApplication.shared.isIdleTimerDisabled = false
             
         } else {
             timer.invalidate()
@@ -59,25 +55,26 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
             label.text = "10 minutes"
             sliderOutlet.isHidden = false
             beginOutlet.setTitle("begin", for: [])
+            UIApplication.shared.isIdleTimerDisabled = false
         }
 
     }
     
     @objc func counter() {
         minutes -= 1
-        label.text = String(minutes) + " minutes"
-        
         if (minutes == 0) {
             timer.invalidate()
             getQuote()
             Sound.play(file: "SingingBowl.m4a")
             activityIndicatorView.stopAnimating()
             beginOutlet.setTitle("again", for: [])
+            UIApplication.shared.isIdleTimerDisabled = false
+        } else if (minutes == 1) {
+            label.text = String(minutes) + " minute"
+        } else {
+            label.text = String(minutes) + " minutes"
         }
-        
     }
-    
-    
     
     func getQuote() {
         Alamofire.request("https://andruxnet-random-famous-quotes.p.mashape.com/", method: .get, parameters: ["cat":"famous", "count":"1"], headers: ["X-Mashape-Key":"Pw5vWwsh83mshrXvLbPARRDTcjBEp1SGw1pjsnmHAWq03QRVS7"]).responseJSON {
@@ -95,20 +92,11 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         self.view.addSubview(activityIndicatorView)
         
-        //activityIndicatorView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-
-
 }
-
