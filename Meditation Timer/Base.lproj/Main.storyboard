@@ -18,32 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="zen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywc-5v-VFU">
-                                <rect key="frame" x="166" y="104" width="50" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywc-5v-VFU">
+                                <rect key="frame" x="0.0" y="114.00000000000001" width="375" height="37.666666666666671"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" value="10" minValue="5" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="XNI-eg-ruM">
-                                <rect key="frame" x="84" y="426" width="214" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" value="10" minValue="5" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="XNI-eg-ruM">
+                                <rect key="frame" x="80.666666666666686" y="391" width="214" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="4mE-OV-x84"/>
+                                </constraints>
                                 <color key="minimumTrackTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="1uH-Sm-PWR"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eac-0F-ZlJ">
-                                <rect key="frame" x="33" y="227" width="308" height="178"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eac-0F-ZlJ">
+                                <rect key="frame" x="0.0" y="227" width="375" height="32.666666666666686"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dg-vh-OxI">
-                                <rect key="frame" x="160" y="639" width="62" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dg-vh-OxI">
+                                <rect key="frame" x="162.66666666666666" y="681" width="50" height="37"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <state key="normal" title="begin">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,8 +51,30 @@
                                     <action selector="begin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTZ-K0-KVA"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80e-aI-HhM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="43.666666666666657" y="312" width="288" height="288"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="cw9-XD-ADD"/>
+                                    <constraint firstAttribute="width" secondItem="80e-aI-HhM" secondAttribute="height" id="fqH-3o-CMD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="80e-aI-HhM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="090-au-2Pz"/>
+                            <constraint firstItem="eac-0F-ZlJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Bi-f4-TaB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eac-0F-ZlJ" secondAttribute="trailing" id="4GR-U7-VaB"/>
+                            <constraint firstItem="Ywc-5v-VFU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="5ai-Gu-51P"/>
+                            <constraint firstItem="Ywc-5v-VFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5tN-bB-aB9"/>
+                            <constraint firstItem="XNI-eg-ruM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQ2-ZU-cOT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Dg-vh-OxI" secondAttribute="bottom" constant="60" id="JoY-oE-8si"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ywc-5v-VFU" secondAttribute="trailing" id="OhP-n4-khE"/>
+                            <constraint firstItem="XNI-eg-ruM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d1r-oD-Djk"/>
+                            <constraint firstItem="80e-aI-HhM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="ehc-iM-FKe"/>
+                            <constraint firstItem="eac-0F-ZlJ" firstAttribute="top" secondItem="Ywc-5v-VFU" secondAttribute="bottom" constant="75.333333333333314" id="gOP-nw-Dl1"/>
+                            <constraint firstItem="5Dg-vh-OxI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vHD-T9-ccJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="subviews">
@@ -67,6 +88,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="80e-aI-HhM" id="Bjs-Ia-i5z"/>
                         <outlet property="beginOutlet" destination="5Dg-vh-OxI" id="MN9-nh-KGe"/>
                         <outlet property="label" destination="eac-0F-ZlJ" id="Fz9-5a-Cf9"/>
                         <outlet property="sliderOutlet" destination="XNI-eg-ruM" id="1IF-yj-8OH"/>

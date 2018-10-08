@@ -18,8 +18,10 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
     
     var minutes = 10
     var timer = Timer()
-    var activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 91, y: 375, width: 200, height: 200),
-                                                        type: NVActivityIndicatorType(rawValue: NVActivityIndicatorType.ballScaleRippleMultiple.rawValue)!, color: UIColor(white: CGFloat(237 / 255.0), alpha: 1))
+//    var activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 91, y: 375, width: 200, height: 200),
+//                                                        type: NVActivityIndicatorType(rawValue: NVActivityIndicatorType.ballScaleRippleMultiple.rawValue)!, color: UIColor(white: CGFloat(237 / 255.0), alpha: 1))
+    @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
+    
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var sliderOutlet: UISlider!
@@ -77,13 +79,13 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
     }
     
     func getQuote() {
-        Alamofire.request("https://andruxnet-random-famous-quotes.p.mashape.com/", method: .get, parameters: ["cat":"famous", "count":"1"], headers: ["X-Mashape-Key":"Pw5vWwsh83mshrXvLbPARRDTcjBEp1SGw1pjsnmHAWq03QRVS7"]).responseJSON {
+        Alamofire.request("https://quotes.rest/qod?category=inspire", method: .get, headers: ["Accept": "application/json"]).responseJSON {
             (dataResponse) in
             switch dataResponse.result {
             case .success(let value):
                 let json = JSON(value)
-                print(json)
-                self.label.text = json.array?.first?["quote"].string
+                guard let quoteJSON = json["contents"]["quotes"].array?.first else { return }
+                self.label.text = "\(quoteJSON["quote"].stringValue) - \(quoteJSON["author"].stringValue)"
             case .failure(let error):
                 print(error)
             }
@@ -93,7 +95,9 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(activityIndicatorView)
+
+        activityIndicatorView.type = NVActivityIndicatorType(rawValue: NVActivityIndicatorType.ballScaleRippleMultiple.rawValue)!
+        activityIndicatorView.color = UIColor(white: CGFloat(237 / 255.0), alpha: 1)
         
     }
 
