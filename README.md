@@ -27,8 +27,10 @@ A simple timer for your meditiation sessions. No unecessary frills and no harsh 
 
 • Please keep screen on while timer is running
 
-![Alt text](relative/DemoPics/demo1.png?raw=true "UI")
+![Alt text](/relative/Zen/DemoPics/demo1.png?raw=false "UI")
 ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+Zen/DemoPics/demo1.png
+![alt text](http://url/to/img.png)
 
 
 ## Frameworks:
