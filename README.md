@@ -1,4 +1,4 @@
-Meditation Timer
+# Meditation Timer
 
 A simple timer for your meditiation sessions. No unecessary frills and no harsh alarms– just enjoy the journey!
 
