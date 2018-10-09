@@ -11,6 +11,8 @@ No unecessary frills and no harsh alarms– just enjoy the journey!
 
 • Set session length in increments of 5 minutes (default at 10)
 
+• Daily quote provided at end of session
+
 
 ## Usage:
 
