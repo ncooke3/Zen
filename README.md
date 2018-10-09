@@ -1,6 +1,7 @@
-# Zen: A Meditation Timer
+# Zen: A Meditation Timer <img src="https://github.com/ncooke3/Zen/blob/master/DemoPics/demo1.png" width="150" height="300" img align="right">
 
-A simple timer for your meditiation sessions. No unecessary frills and no harsh alarms– just enjoy the journey!
+A simple timer for your meditiation sessions. 
+No unecessary frills and no harsh alarms– just enjoy the journey! 
 
 ## Features:
 
@@ -27,11 +28,7 @@ A simple timer for your meditiation sessions. No unecessary frills and no harsh 
 
 • Please keep screen on while timer is running
 
-![Alt text](/relative/Zen/DemoPics/demo1.png?raw=false "UI")
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
-Zen/DemoPics/demo1.png
-![alt text](http://url/to/img.png)
-
+<img src="https://github.com/ncooke3/Zen/blob/master/DemoPics/demo2.png" width="150" height="300" img align="left"><p align="center"><img src="https://github.com/ncooke3/Zen/blob/master/DemoPics/demo3.png" width="150" height="300"><img src="https://github.com/ncooke3/Zen/blob/master/DemoPics/demo4.png" width="150" height="300" img align="right"></p>
 
 ## Frameworks:
 
