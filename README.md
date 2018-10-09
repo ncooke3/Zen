@@ -1,23 +1,37 @@
-# Meditation Timer
+# Zen: A Meditation Timer
 
 A simple timer for your meditiation sessions. No unecessary frills and no harsh alarms– just enjoy the journey!
 
-Features:
+## Features:
+
 • Start("begin")/Stop("end)/Reset("again") timer functionality
+
 • Peaceful meditation singing bowl sounds at the beginning and end of each session
+
 • Set session length in increments of 5 minutes (default at 10)
 
-Usage:
+
+## Usage:
+
 • Select session length using slider
+
 • Press "begin"
+
 • Meditate
+
 • Meditation bowl will signal session end
-• Enjoy quote provided courtesy of 
+
+• Enjoy updated quote of the day provided courtesy of https://quotes.rest/qod?category=inspire
+
 • Please keep screen on while timer is running
 
 
-Frameworks:
+## Frameworks:
+
 • Alamofire
+
 • SwiftyJSON
+
 • SwiftySound
+
 • NVActivityIndicatorView
