@@ -4,7 +4,7 @@ A simple timer for your meditiation sessions. No unecessary frills and no harsh 
 
 ## Features:
 
-• Start("begin")/Stop("end)/Reset("again") timer functionality
+• Start("begin") / Stop("end) / Reset("again") timer functionality
 
 • Peaceful meditation singing bowl sounds at the beginning and end of each session
 
@@ -17,13 +17,17 @@ A simple timer for your meditiation sessions. No unecessary frills and no harsh 
 
 • Press "begin"
 
-• Meditate
+• Meditation bowl will signal beginning of session
+
+• Meditate :relieved:
 
 • Meditation bowl will signal session end
 
 • Enjoy updated quote of the day provided courtesy of https://quotes.rest/qod?category=inspire
 
 • Please keep screen on while timer is running
+
+![Alt text](/relative/path/to/img.jpg?raw=true "UI")
 
 
 ## Frameworks:
