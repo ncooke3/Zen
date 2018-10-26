@@ -36,7 +36,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eac-0F-ZlJ">
-                                <rect key="frame" x="0.0" y="227" width="375" height="32.666666666666686"/>
+                                <rect key="frame" x="10" y="227" width="355" height="32.666666666666686"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,8 +63,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="80e-aI-HhM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="090-au-2Pz"/>
-                            <constraint firstItem="eac-0F-ZlJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Bi-f4-TaB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eac-0F-ZlJ" secondAttribute="trailing" id="4GR-U7-VaB"/>
+                            <constraint firstItem="eac-0F-ZlJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2Bi-f4-TaB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eac-0F-ZlJ" secondAttribute="trailing" constant="10" id="4GR-U7-VaB"/>
                             <constraint firstItem="Ywc-5v-VFU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="5ai-Gu-51P"/>
                             <constraint firstItem="Ywc-5v-VFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5tN-bB-aB9"/>
                             <constraint firstItem="XNI-eg-ruM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQ2-ZU-cOT"/>
@@ -72,7 +72,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ywc-5v-VFU" secondAttribute="trailing" id="OhP-n4-khE"/>
                             <constraint firstItem="XNI-eg-ruM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d1r-oD-Djk"/>
                             <constraint firstItem="80e-aI-HhM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="ehc-iM-FKe"/>
-                            <constraint firstItem="eac-0F-ZlJ" firstAttribute="top" secondItem="Ywc-5v-VFU" secondAttribute="bottom" constant="75.333333333333314" id="gOP-nw-Dl1"/>
+                            <constraint firstItem="eac-0F-ZlJ" firstAttribute="top" secondItem="Ywc-5v-VFU" secondAttribute="bottom" constant="75.329999999999998" id="gOP-nw-Dl1"/>
                             <constraint firstItem="5Dg-vh-OxI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vHD-T9-ccJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
