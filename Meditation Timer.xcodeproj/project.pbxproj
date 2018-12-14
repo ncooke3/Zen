@@ -15,6 +15,7 @@
 		EAA01A132167F6A6004E0851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A112167F6A6004E0851 /* LaunchScreen.storyboard */; };
 		EAA01A1E2167F6A6004E0851 /* Meditation_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA01A1D2167F6A6004E0851 /* Meditation_TimerTests.swift */; };
 		EAA01A2B21685FAB004E0851 /* SingingBowl.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */; };
+		EAAC6E4121C4482C004334E0 /* OfflineQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC6E4021C4482C004334E0 /* OfflineQuotes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EAA01A1D2167F6A6004E0851 /* Meditation_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation_TimerTests.swift; sourceTree = "<group>"; };
 		EAA01A1F2167F6A6004E0851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = SingingBowl.m4a; path = ../SingingBowl.m4a; sourceTree = "<group>"; };
+		EAAC6E4021C4482C004334E0 /* OfflineQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineQuotes.swift; sourceTree = "<group>"; };
 		EE24F48BA550063C4490A11E /* Pods_Meditation_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditation_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AB9A32460844C987520CEF /* Pods-Meditation TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation TimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation TimerTests/Pods-Meditation TimerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				EAA01A082167F6A4004E0851 /* AppDelegate.swift */,
+				EAAC6E4021C4482C004334E0 /* OfflineQuotes.swift */,
 				EAA01A0A2167F6A4004E0851 /* ViewController.swift */,
 				EAA01A0C2167F6A4004E0851 /* Main.storyboard */,
 				EAA01A2A21685FAB004E0851 /* SingingBowl.m4a */,
@@ -299,6 +302,7 @@
 			files = (
 				EAA01A0B2167F6A4004E0851 /* ViewController.swift in Sources */,
 				EAA01A092167F6A4004E0851 /* AppDelegate.swift in Sources */,
+				EAAC6E4121C4482C004334E0 /* OfflineQuotes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

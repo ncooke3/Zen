@@ -83,10 +83,15 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
             (dataResponse) in
             switch dataResponse.result {
             case .success(let value):
+                print("success")
                 let json = JSON(value)
                 guard let quoteJSON = json["contents"]["quotes"].array?.first else { return }
                 self.label.text = "\(quoteJSON["quote"].stringValue) - \(quoteJSON["author"].stringValue)"
             case .failure(let error):
+                print("api failed")
+                let quote = quoteDict
+                let randomInt = Int.random(in: 0..<quote.count)
+                self.label.text = quote[randomInt]
                 print(error)
             }
         }
